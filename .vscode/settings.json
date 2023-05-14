@@ -1,0 +1,26 @@
+{
+    "python.formatting.provider": "none",
+    "python.linting.enabled": true,
+    "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "[python]": {
+      "editor.rulers": [
+        88
+      ],
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": false,
+      "editor.formatOnType": false,
+      "editor.insertSpaces": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "isort.args": [
+      "--known-local-folder",
+      "src"
+    ]
+}
