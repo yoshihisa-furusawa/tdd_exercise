@@ -33,6 +33,5 @@ repos:
       - id: test
         name: RUN test
         language: system
-        entry: poetry run test
-        require_serial: true
+        entry: poetry run pytest
         types: [python]
